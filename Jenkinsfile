@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Pull') {
             steps {
                 echo 'Building..'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                sh 'ls -laht'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'pwd'
             }
         }
     }
