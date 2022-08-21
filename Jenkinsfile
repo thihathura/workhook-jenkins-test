@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                echo 'Building..'
+                git url: 'https://https://github.com/thihathura/workhook-jenkins-test/edit/main/Jenkinsfile' , branch: 'main'
             }
         }
         stage('Test') {
